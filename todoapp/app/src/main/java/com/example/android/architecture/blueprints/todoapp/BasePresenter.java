@@ -16,8 +16,9 @@
 
 package com.example.android.architecture.blueprints.todoapp;
 
-public interface BasePresenter {
 
+public interface BasePresenter {
+    //start what
     void start();
 
 }

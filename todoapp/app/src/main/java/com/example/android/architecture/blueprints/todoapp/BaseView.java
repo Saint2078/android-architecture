@@ -17,7 +17,7 @@
 package com.example.android.architecture.blueprints.todoapp;
 
 public interface BaseView<T> {
-
+    //view绑定Presenter
     void setPresenter(T presenter);
 
 }

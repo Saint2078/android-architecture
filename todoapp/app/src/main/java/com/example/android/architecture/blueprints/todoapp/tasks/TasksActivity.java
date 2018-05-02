@@ -72,6 +72,7 @@ public class TasksActivity extends AppCompatActivity {
         }
 
         // Create the presenter
+        // TODO: 2018/5/2  
         mTasksPresenter = new TasksPresenter(Injection.provideTasksRepository(
                 getApplicationContext()), tasksFragment);
 
@@ -82,6 +83,7 @@ public class TasksActivity extends AppCompatActivity {
 
         // Load previously saved state, if available.
         if (savedInstanceState != null) {
+            // TODO: 2018/5/2  
             TasksFilterType currentFiltering =
                     (TasksFilterType) savedInstanceState.getSerializable(CURRENT_FILTERING_KEY);
             mTasksPresenter.setFiltering(currentFiltering);
@@ -90,6 +92,7 @@ public class TasksActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
+        // TODO: 2018/5/2  
         outState.putSerializable(CURRENT_FILTERING_KEY, mTasksPresenter.getFiltering());
 
         super.onSaveInstanceState(outState);
@@ -97,6 +100,7 @@ public class TasksActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        
         switch (item.getItemId()) {
             case android.R.id.home:
                 // Open the navigation drawer when the home icon is selected from the toolbar.
@@ -106,6 +110,7 @@ public class TasksActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    // TODO: 2018/5/2  
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -133,6 +138,7 @@ public class TasksActivity extends AppCompatActivity {
                 });
     }
 
+    // TODO: 2018/5/2
     @VisibleForTesting
     public IdlingResource getCountingIdlingResource() {
         return EspressoIdlingResource.getIdlingResource();
