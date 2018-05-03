@@ -27,6 +27,7 @@ import java.util.List;
  * Exposes the data to be used in the {@link StatisticsContract.View}.
  * <p>
  * Note that in this case the view model is also the view, not the fragment.
+ * 这里ViewModel持有了view
  */
 public class StatisticsViewModel implements StatisticsContract.View {
 

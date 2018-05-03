@@ -36,6 +36,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * Main UI for the add task screen. Users can enter a task title and description.
+ * 这里fregment充当了view
  */
 public class AddEditTaskFragment extends Fragment implements AddEditTaskContract.View {
 

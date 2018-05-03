@@ -41,7 +41,7 @@ public class StatisticsFragment extends Fragment {
     private StatisticsPresenter mPresenter;
 
     private StatisticsFragBinding mViewDataBinding;
-
+    //view会持有viewModel
     private StatisticsViewModel mStatisticsViewModel;
 
     public static StatisticsFragment newInstance() {

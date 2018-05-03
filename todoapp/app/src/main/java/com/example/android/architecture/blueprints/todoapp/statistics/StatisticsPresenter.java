@@ -40,6 +40,7 @@ public class StatisticsPresenter implements StatisticsContract.Presenter {
         mStatisticsView = checkNotNull(statisticsView, "StatisticsView cannot be null!");
     }
 
+    //这个应该就是present的初始化
     @Override
     public void start() {
         loadStatistics();
