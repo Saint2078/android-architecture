@@ -58,6 +58,7 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
         mIsDataMissing = shouldLoadDataFromRepo;
     }
 
+    //start方法
     @Override
     public void start() {
         if (!isNewTask() && mIsDataMissing) {
