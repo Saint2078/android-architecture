@@ -24,7 +24,7 @@ import com.example.android.architecture.blueprints.todoapp.data.Task;
  * This specifies the contract between the view and the presenter.
  */
 public interface AddEditTaskContract {
-
+    //view的职责的行为如下，fragment继承view
     interface View extends BaseView<Presenter> {
 
         void showEmptyTaskError();
@@ -35,7 +35,7 @@ public interface AddEditTaskContract {
 
         boolean isActive();
     }
-
+    //presenter的职责如下，presenter继承此presenter
     interface Presenter extends BasePresenter {
 
         void saveTask(String title, String description);
