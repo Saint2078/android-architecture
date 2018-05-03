@@ -30,7 +30,9 @@ import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingRe
 
 /**
  * Displays an add or edit task screen.
+ * activity里面基本没有任何逻辑
  */
+
 public class AddEditTaskActivity extends AppCompatActivity {
 
     public static final int REQUEST_ADD_TASK = 1;
